@@ -1,13 +1,9 @@
 import { useState } from "react";
+import Layout from "./layout/Layout";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return (
-    <>
-      <div>
-        <h1 className="text-xl text-green-500">Hello World</h1>
-      </div>
-    </>
-  );
+  return <Layout>Hello</Layout>;
 }
 
 export default App;
