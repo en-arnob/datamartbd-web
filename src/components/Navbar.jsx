@@ -35,7 +35,7 @@ const Navbar = () => {
                   href="#"
                 >
                   {" "}
-                  Contacts{" "}
+                  Contact{" "}
                 </a>
               </li>
               <li>
@@ -61,17 +61,17 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
               <a
-                className="block bg-gray-800 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
+                className="block bg-gray-800 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-rose-600"
                 href="#"
               >
-                Button
+                Get Started
               </a>
-              <a
+              {/* <a
                 className="hidden bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-800 transition hover:text-teal-600/75 border border-gray-800 sm:block"
                 href="#"
               >
                 Button
-              </a>
+              </a> */}
             </div>
             <button className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">
               <span className="sr-only">Toggle menu</span>
