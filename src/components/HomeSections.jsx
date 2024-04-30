@@ -342,6 +342,155 @@ const HomeSections = () => {
           </div>
         </div>
       </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+          <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+            Discover Our Additional Services
+          </h2>
+
+          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <article className="group">
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                />
+
+                <div className="p-4">
+                  <a href="#">
+                    <h3 className="text-lg font-medium text-gray-900">
+                      Enhance Your Experience
+                    </h3>
+                  </a>
+
+                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                    Our software company provides top-notch customer support and
+                    comprehensive training to ensure your success.
+                  </p>
+                  <a
+                    href="#"
+                    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-600"
+                  >
+                    Learn More
+                    <span
+                      aria-hidden="true"
+                      className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                    >
+                      &rarr;
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </blockquote>
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <article className="group">
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                />
+
+                <div className="p-4">
+                  <a href="#">
+                    <h3 className="text-lg font-medium text-gray-900">
+                      Stay Ahead of the Curve
+                    </h3>
+                  </a>
+
+                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                    With our software company, you'll always have access to the
+                    latest updates and advancements in the industry.
+                  </p>
+                  <a
+                    href="#"
+                    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-600"
+                  >
+                    Sign Up
+                    <span
+                      aria-hidden="true"
+                      className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                    >
+                      &rarr;
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </blockquote>
+
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <article className="group">
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                />
+
+                <div className="p-4">
+                  <a href="#">
+                    <h3 className="text-lg font-medium text-gray-900">
+                      Unlock Your Full Potential
+                    </h3>
+                  </a>
+
+                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                    Our software company offers personalized training programs
+                    to help you maximize your productivity and efficiency.
+                  </p>
+                  <a
+                    href="#"
+                    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-600"
+                  >
+                    Get Started
+                    <span
+                      aria-hidden="true"
+                      className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                    >
+                      &rarr;
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+          <div className="h-32 text-center justify-center items-center rounded-lg p-4 ">
+            <h2 className="text-left justify-start text-xl font-bold tracking-tight text-gray-900 sm:text-4xl p-10">
+              Discover Our Impressive Company Achievements and Milestones
+            </h2>
+          </div>
+          <div className="h-32 rounded-lg p-4 ">
+            <p>
+              Over the years, we have accomplished remarkable feats, solidifying
+              our position as a leading software company.
+            </p>
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mt-5">
+              <div className="h-32 rounded-lg p-4 ">
+                <h2 className="text-left justify-start text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+                  50%
+                </h2>
+                <p className="pt-2">
+                  Increase in Customer Satisfaction through our Innovative
+                  Solutions
+                </p>
+              </div>
+              <div className="h-32 rounded-lg p-4 ">
+                <h2 className="text-left justify-start text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+                  50%
+                </h2>
+                <p className="pt-2">
+                  Reduction in Time and Cost for Businesses with our Software
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
