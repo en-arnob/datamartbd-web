@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -21,13 +22,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a
+                <Link
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="#"
+                  to="services"
+                  smooth={true}
                 >
-                  {" "}
-                  Services{" "}
-                </a>
+                  Services
+                </Link>
               </li>
               <li>
                 <a
@@ -48,13 +49,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
-                  href="#"
+                <Link
+                    className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                    to="faq"
+                    smooth={true}
                 >
-                  {" "}
-                  More{" "}
-                </a>
+                  FAQ
+                </Link>
               </li>
             </ul>
           </nav>
