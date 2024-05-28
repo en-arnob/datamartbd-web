@@ -34,6 +34,17 @@ function NavBar() {
                     <li className="nav-item">
                         <Link
                             smooth={true}
+                            to="about"
+                            activeClassName="active"
+                            className="nav-links cursor-pointer"
+                            onClick={handleClick}
+                        >
+                            About
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            smooth={true}
                             to="services"
                             activeClassName="active"
                             className="nav-links cursor-pointer"
@@ -42,17 +53,7 @@ function NavBar() {
                             Services
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <NavLink
-                            exact
-                            to="/about"
-                            activeClassName="active"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            About
-                        </NavLink>
-                    </li>
+
 
                     <li className="nav-item">
                         <NavLink

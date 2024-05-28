@@ -66,7 +66,7 @@ const Third = () => {
                         </Modal>
 
                         <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                            <article className="text-center rounded-lg border border-gray-100 bg-white pt-2">
+                            <article className="p-2 text-center rounded-lg border border-gray-100 bg-white pt-2">
                 <span className="inline-block text-teal-800 rounded text-4xl md:text-5xl font-bold p-2 ">
 
                   <TiLockOpenOutline/>

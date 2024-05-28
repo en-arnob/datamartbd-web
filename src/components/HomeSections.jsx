@@ -81,7 +81,7 @@ const HomeSections = () => {
                         </p>
                         <div className="flex text-left gap-2 mt-5">
                             <div>
-                                <article className="rounded-lg border border-gray-100 bg-white pt-2">
+                                <article className="rounded-lg p-2 border border-gray-100 bg-white pt-2">
                   <span className="inline-block rounded text-4xl md:text-5xl font-bold p-2 text-blue-800 ">
                     <HiOutlineLightningBolt/>
                   </span>
@@ -99,7 +99,7 @@ const HomeSections = () => {
                                 </article>
                             </div>
                             <div>
-                                <article className="rounded-lg border border-gray-100 bg-white   pt-2">
+                                <article className="rounded-lg p-2 border border-gray-100 bg-white   pt-2">
                   <span className="inline-block rounded text-4xl md:text-5xl font-bold p-2 text-blue-900">
                     <CgShutterstock/>
                   </span>
@@ -145,107 +145,7 @@ const HomeSections = () => {
 
             <Fourth/>
 
-            <section className="bg-white">
-                <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-                    <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                        Discover the Power of Our User-Friendly Software
-                    </h2>
 
-                    <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-                        <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                            <article className="text-center rounded-lg border border-gray-100 bg-white pt-2">
-                <span className="inline-block rounded text-3xl font-bold p-2 ">
-                  <FiBox/>
-                </span>
-
-                                <a href="#">
-                                    <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                                        Effortlessly Manage Your Tasks with Our Intuitive Interface
-                                    </h3>
-                                </a>
-
-                                <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                    Our software simplifies complex processes, making it easy for
-                                    you to achieve your goals.
-                                </p>
-                                <a
-                                    href="#"
-                                    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
-                                >
-                                    Learn More
-                                    <span
-                                        aria-hidden="true"
-                                        className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-                                    >
-                    &rarr;
-                  </span>
-                                </a>
-                            </article>
-                        </blockquote>
-                        <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                            <article className="text-center rounded-lg border border-gray-100 bg-white pt-2">
-                <span className="inline-block rounded text-3xl font-bold p-2 ">
-                  <FiBox/>
-                </span>
-
-                                <a href="#">
-                                    <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                                        Streamline Your Workflow with Our Advanced Features
-                                    </h3>
-                                </a>
-
-                                <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                    Experience the convenience of automated tasks and seamless
-                                    integrations.
-                                </p>
-                                <a
-                                    href="#"
-                                    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
-                                >
-                                    Learn More
-                                    <span
-                                        aria-hidden="true"
-                                        className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-                                    >
-                    &rarr;
-                  </span>
-                                </a>
-                            </article>
-                        </blockquote>
-
-                        <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                            <article className="text-center rounded-lg border border-gray-100 bg-white pt-2">
-                <span className="inline-block rounded text-3xl font-bold p-2 ">
-                  <FiBox/>
-                </span>
-
-                                <a href="#">
-                                    <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                                        Boost Productivity with Our Customizable Solutions
-                                    </h3>
-                                </a>
-
-                                <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                    Tailor our software to fit your unique business needs and
-                                    maximize efficiency.
-                                </p>
-                                <a
-                                    href="#"
-                                    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
-                                >
-                                    Learn More
-                                    <span
-                                        aria-hidden="true"
-                                        className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-                                    >
-                    &rarr;
-                  </span>
-                                </a>
-                            </article>
-                        </blockquote>
-                    </div>
-                </div>
-            </section>
 
             <AdditionalServices/>
 
