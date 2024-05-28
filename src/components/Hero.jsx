@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {Link} from "react-scroll";
 
 const Hero = () => {
   const fadeLeft = {
@@ -43,19 +44,15 @@ const Hero = () => {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4 text-center">
-                <a
-                    href="#"
-                    className="block w-full rounded bg-blue-900 px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-950 focus:outline-none focus:ring active:bg-blue-700 sm:w-auto"
+
+                <Link
+                    smooth={true}
+                    to="get-started"
+                    className="block w-full rounded bg-blue-900 px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-950 focus:outline-none focus:ring active:bg-blue-700 sm:w-auto cursor-pointer"
                 >
                   Get Started
-                </a>
+                </Link>
 
-                <a
-                    href="#"
-                    className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-blue-950 shadow hover:text-blue-900 focus:outline-none focus:ring active:text-blue-500 sm:w-auto"
-                >
-                  Learn More
-                </a>
               </div>
             </div>
           </motion.div>

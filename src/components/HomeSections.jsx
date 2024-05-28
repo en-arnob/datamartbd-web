@@ -39,7 +39,7 @@ const HomeSections = () => {
         visible: {opacity: 1, x: 0},
     };
     return (
-        <div>
+        <div name='get-started'>
             <Modal open={mod1Visible} onClose={() => setMod1Visible(false)} center>
                 <h2 className='text-xl font-bold text-blue-900'>Transforming business with cutting-edge software
                     solutions.</h2>
@@ -155,9 +155,9 @@ const HomeSections = () => {
             <Products/>
             <Turn/>
 
-            <div name='faq' className='bg-gray-200 text-black'>
-                <Faq/>
-            </div>
+            {/*<div name='faq' className='bg-gray-200 text-black'>*/}
+            {/*    <Faq/>*/}
+            {/*</div>*/}
         </div>
     );
 };
