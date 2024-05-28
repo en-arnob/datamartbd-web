@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {useAnimation, motion} from "framer-motion";
 import {useInView} from "react-intersection-observer";
-import {FiBox} from "react-icons/fi";
-import {TiLockOpenOutline} from "react-icons/ti";
 import {TfiTarget} from "react-icons/tfi";
 import {Modal} from "react-responsive-modal";
-import {PiBinoculars, PiBinocularsBold} from "react-icons/pi";
+import {PiBinoculars} from "react-icons/pi";
 import {BsSymmetryVertical} from "react-icons/bs";
+import ABT from '../assets/abt.jpg'
 
 const fadeLeft = {
     hidden: {opacity: 0, x: -100},
@@ -35,7 +34,7 @@ const Fourth = () => {
                     variants={fadeLeft}
                     transition={{duration: 0.5}}
                     alt=""
-                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={ABT}
                     className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-se-[30px] md:h-[calc(100%_-_4rem)] md:rounded-se-[60px]"
                 />
                 <div className="p-8 md:p-12 lg:px-16 lg:py-24">
@@ -47,7 +46,7 @@ const Fourth = () => {
                             Committed to give you excellent services.
                         </h2>
 
-                        <p className="mt-4 text-justify text-gray-500 md:mt-4 md:block">
+                        <p className="mt-4 text-justify text-gray-500 md:mt-4 md:block leading-tight">
                             DataMart BD Limited is a comprehensive IT solutions provider based in Bangladesh, empowering
                             businesses with innovative technology and strategic consulting. We are a one-stop shop for
                             all your

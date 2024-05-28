@@ -13,6 +13,8 @@ import {CgShutterstock} from "react-icons/cg";
 import 'react-responsive-modal/styles.css';
 import {Modal} from 'react-responsive-modal';
 import Products from "./Products.jsx";
+import Techs from "./Techs.jsx";
+import Partners from "./Partners.jsx";
 
 
 const HomeSections = () => {
@@ -145,14 +147,11 @@ const HomeSections = () => {
             <Third/>
 
             <Fourth/>
-
-
-
             <AdditionalServices/>
-
-            <Reviews/>
-
+            <Techs/>
+            {/*<Reviews/>*/}
             <Products/>
+            <Partners/>
             <Turn/>
 
             {/*<div name='faq' className='bg-gray-200 text-black'>*/}
