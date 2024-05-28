@@ -60,8 +60,8 @@ const AdditionalServices = () => {
     return (<div name="services">
         <section className="bg-white">
             <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-                <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl mt-4">
-                    Discover Our Services
+                <h2 className="text-center text-4xl font-bold tracking-tight text-blue-950 sm:text-3xl mt-4">
+                    Discover Our <span className='text-orange-600'>Services</span>
                 </h2>
                 <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
                     <Modal open={soft} onClose={() => setSoft(false)} center>

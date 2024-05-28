@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-scroll";
 
 const Footer = () => {
   return (
@@ -6,60 +7,63 @@ const Footer = () => {
       <footer className="bg-gray-100">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex justify-center text-teal-600">
-            <h1 className="text-xl font-bold">DataMart BD Limited</h1>
+            <h1 className="text-xl font-bold text-blue-950">DataMart<span className='text-orange-600'>BD Limited</span></h1>
           </div>
 
-          <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-              <a
-                className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                {" "}
-                About Us{" "}
-              </a>
-            </li>
+            <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+                <li>
+              <span
+                  className="text-gray-700 transition hover:text-gray-700/75">
+                  <Link
+                      smooth={true}
+                      to="about"
 
-            <li>
-              <a
-                className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                {" "}
-                Services{" "}
-              </a>
-            </li>
+                      className="cursor-pointer"
+                  >
+                            About
+                        </Link>
+              </span>
+                </li>
 
-            <li>
-              <a
-                className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                {" "}
-                Contact Us{" "}
-              </a>
-            </li>
+                <li>
+                <span
+                    className="text-gray-700 transition hover:text-gray-700/75">
+                  <Link
+                      smooth={true}
+                      to="services"
 
-            <li>
-              <a
-                className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                {" "}
-                FAQ{" "}
-              </a>
-            </li>
+                      className="cursor-pointer"
+                  >
+                            Services
+                        </Link>
+              </span>
+                </li>
+                <li>
+                <span
+                    className="text-gray-700 transition hover:text-gray-700/75">
+                  <Link
+                      smooth={true}
+                      to="products"
+                      className="cursor-pointer"
+                  >
+                            Our Products
+                        </Link>
+              </span>
+                </li>
+                <li>
+                <span
+                    className="text-gray-700 transition hover:text-gray-700/75">
+                  <Link
+                      smooth={true}
+                      to="contact"
 
-            <li>
-              <a
-                className="text-gray-700 transition hover:text-gray-700/75"
-                href="#"
-              >
-                {" "}
-                Support{" "}
-              </a>
-            </li>
-          </ul>
+                      className="cursor-pointer"
+                  >
+                            Contact Us
+                        </Link>
+              </span>
+                </li>
+            </ul>
         </div>
       </footer>
     </div>

@@ -12,6 +12,7 @@ import {HiOutlineLightningBolt} from "react-icons/hi";
 import {CgShutterstock} from "react-icons/cg";
 import 'react-responsive-modal/styles.css';
 import {Modal} from 'react-responsive-modal';
+import Products from "./Products.jsx";
 
 
 const HomeSections = () => {
@@ -149,44 +150,9 @@ const HomeSections = () => {
 
             <AdditionalServices/>
 
-            <div className="pb-5  text-gray-900 bg-gray-200">
-                <div className=" grid  grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
-                    <div className="bg-gray-200 h-32 text-center justify-center items-center rounded-lg p-4 ">
-                        <h2 className=" bg-gray-200 text-left justify-start text-xl font-bold tracking-tight text-gray-900 sm:text-4xl p-10">
-                            Discover Our Impressive Company Achievements and Milestones
-                        </h2>
-                    </div>
-                    <div className="h-32 rounded-lg p-4 ">
-                        <p className="p-4">
-                            Over the years, we have accomplished remarkable feats, solidifying
-                            our position as a leading software company.
-                        </p>
-                        <div className="bg-gray-200 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mt-5">
-                            <div className="h-32 rounded-lg p-4 ">
-                                <h2 className="text-left justify-start text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                                    50%
-                                </h2>
-                                <p className="pt-2">
-                                    Increase in Customer Satisfaction through our Innovative
-                                    Solutions
-                                </p>
-                            </div>
-                            <div className="h-32 rounded-lg p-4 ">
-                                <h2 className="text-left justify-start text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                                    50%
-                                </h2>
-                                <p className="pt-2">
-                                    Reduction in Time and Cost for Businesses with our Software
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section className=" bg-gray-200 py-10 "></section>
-
             <Reviews/>
 
+            <Products/>
             <Turn/>
 
             <div name='faq' className='bg-gray-200 text-black'>

@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
               <h1 className="text-3xl text-white font-extrabold sm:text-5xl">
                 Transforming business with innovative
-                <strong className="block font-extrabold text-blue-600">
+                <strong className="block font-extrabold text-rose-600">
                   {" "}
                   Software Solutions.{" "}
                 </strong>

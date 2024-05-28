@@ -40,8 +40,8 @@ const Fourth = () => {
                 />
                 <div className="p-8 md:p-12 lg:px-16 lg:py-24">
                     <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-                        <h2 className="text-center md:text-end text-2xl font-bold md:text-3xl text-orange-600">
-                            Who We Are?
+                        <h2 className="text-center md:text-end text-2xl font-bold md:text-3xl text-blue-950">
+                            Who <span className='text-orange-600'>We</span> Are?
                         </h2>
                         <h2 className="mt-1 text-center md:text-end text-md md:text-xl text-blue-950">
                             Committed to give you excellent services.

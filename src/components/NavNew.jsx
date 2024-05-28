@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {NavLink} from "react-router-dom";
+
 import "../styles/nav.css";
 import {CgMenuRightAlt} from "react-icons/cg";
 import {CgMenuMotion} from "react-icons/cg";
@@ -53,18 +53,29 @@ function NavBar() {
                             Services
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link
+                            smooth={true}
+                            to="products"
+                            activeClassName="active"
+                            className="nav-links cursor-pointer"
+                            onClick={handleClick}
+                        >
+                            Products
+                        </Link>
+                    </li>
 
 
                     <li className="nav-item">
-                        <NavLink
-                            exact
-                            to="/contact"
+                        <Link
+                            smooth={true}
+                            to="contact"
                             activeClassName="active"
-                            className="nav-links"
+                            className="nav-links cursor-pointer"
                             onClick={handleClick}
                         >
                             Contact Us
-                        </NavLink>
+                        </Link>
                     </li>
                 </ul>
                 <div className="nav-icon mt-1 text-orange-500" onClick={handleClick}>
