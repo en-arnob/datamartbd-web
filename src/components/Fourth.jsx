@@ -162,7 +162,6 @@ const Fourth = () => {
                         </blockquote>
 
                         <Modal open={valuesOpen} onClose={() => setValuesOpen(false)} center>
-
                             <h2 className="flex justify-center items-center mb-2 text-7xl text-blue-950">
                                 <BsSymmetryVertical /></h2>
                             <h2 className='text-2xl font-bold text-rose-600'>Our Values</h2>

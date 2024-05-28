@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {useAnimation, motion} from "framer-motion";
 import {useInView} from "react-intersection-observer";
-import {TiLockOpenOutline} from "react-icons/ti";
+
 import {Modal} from "react-responsive-modal";
 
 const squareVariants = {
@@ -11,48 +11,46 @@ const squareVariants = {
 
 const AdditionalServices = () => {
 
+    // states for modals
     const [soft, setSoft] = useState(false)
+    const [web, setWeb] = useState(false)
+    const [mob, setMob] = useState(false)
+    const [dataAnalysis, setDataAnalysis] = useState(false)
+    const [itCon, setItCon] = useState(false)
 
+    // states for inView Animations
     const controls = useAnimation();
     const [ref, inView] = useInView();
-
     const controls2 = useAnimation();
     const [ref2, inView2] = useInView();
-
     const controls3 = useAnimation();
     const [ref3, inView3] = useInView();
-
     const controls4 = useAnimation();
     const [ref4, inView4] = useInView();
-
     const controls5 = useAnimation();
     const [ref5, inView5] = useInView();
 
-
+    // useEffects for inView Animations
     useEffect(() => {
         if (inView) {
             controls.start("visible");
         }
     }, [controls, inView]);
-
     useEffect(() => {
         if (inView2) {
             controls2.start("visible");
         }
     }, [controls2, inView2]);
-
     useEffect(() => {
         if (inView3) {
             controls3.start("visible");
         }
     }, [controls3, inView3]);
-
     useEffect(() => {
         if (inView4) {
             controls4.start("visible");
         }
     }, [controls4, inView4]);
-
     useEffect(() => {
         if (inView5) {
             controls5.start("visible");
@@ -65,7 +63,6 @@ const AdditionalServices = () => {
                 <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl mt-4">
                     Discover Our Services
                 </h2>
-
                 <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
                     <Modal open={soft} onClose={() => setSoft(false)} center>
                         <div className='p-2'>
@@ -136,6 +133,35 @@ const AdditionalServices = () => {
                             </div>
                         </article>
                     </motion.blockquote>
+
+                    <Modal open={web} onClose={() => setWeb(false)} center>
+                        <div className='p-2 pt-5'>
+                            <img
+                                alt=""
+                                src="https://os-system.com/blog/wp-content/uploads/2021/09/Full-Stack-Development-1-1024x576.jpg"
+                                className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                            />
+                            <h2 className='text-xl font-bold text-blue-950'>Web Application Development</h2>
+                            <div className='text-black mt-5'>
+                                <p className=''>
+                                    Do you have a great idea for a web application but lack the technical expertise to
+                                    bring it to life? Our full-stack development services can help. We have a team of
+                                    experienced developers skilled in a variety of technologies, including Node.js,
+                                    React, JavaScript, Python/Django, and PHP/Laravel, MSSQL, MySQL, MongoDB and more.
+                                    We can help you with every stage of the development process, from initial concept to
+                                    deployment and ongoing support.
+                                </p>
+                                <p className='mt-1 text-green-600 font-semibold'>Let us turn your vision into a reality.
+                                    Contact us today to learn more about our full-stack development services.</p>
+
+                                {/*<img*/}
+                                {/*    alt=""*/}
+                                {/*    src="https://decode.agency/wp-content/uploads/2022/12/Custom-software-development-process-infographic.png"*/}
+                                {/*    className="mt-4 mb-5 h-100 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"*/}
+                                {/*/>*/}
+                            </div>
+                        </div>
+                    </Modal>
                     <motion.blockquote
                         ref={ref2}
                         animate={controls2}
@@ -152,11 +178,11 @@ const AdditionalServices = () => {
                             />
 
                             <div className="p-4">
-                                <a href="#">
-                                    <h3 className="text-lg font-medium text-gray-900">
-                                        Web Application Development
-                                    </h3>
-                                </a>
+
+                                <h3 className="text-lg font-medium text-gray-900">
+                                    Web Application Development
+                                </h3>
+
 
                                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                                     Web applications are software applications that are delivered over the internet.
@@ -165,8 +191,8 @@ const AdditionalServices = () => {
                                     cost-effective way to
                                     deliver software to users.
                                 </p>
-                                <a
-                                    href="#"
+                                <button
+                                    onClick={() => setWeb(true)}
                                     className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-600"
                                 >
                                     Read More
@@ -176,11 +202,44 @@ const AdditionalServices = () => {
                                     >
                       &rarr;
                     </span>
-                                </a>
+                                </button>
                             </div>
                         </article>
                     </motion.blockquote>
 
+                    <Modal open={mob} onClose={() => setMob(false)} center>
+                        <div className='p-2 pt-5'>
+                            <img
+                                alt=""
+                                src="https://www.eurotechconseil.com/en/wp-content/uploads/2023/07/header-img-mobil.webp"
+                                className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                            />
+                            <h2 className='text-xl font-bold text-blue-950'>Bring Your Mobile App Idea to Life</h2>
+                            <div className='text-black mt-5'>
+                                <p className=''>
+                                    Looking to create a groundbreaking mobile app but unsure where to start? Our mobile
+                                    app development services can turn your vision into reality. We offer a range of
+                                    development options to fit your needs, including native Android and iOS apps, or
+                                    cross-platform solutions like Flutter and React Native.
+
+                                    Our team of skilled developers possesses expertise in crafting intuitive and
+                                    user-friendly mobile experiences. We'll guide you through every stage of the
+                                    process, from initial concept and design to development, testing, deployment, and
+                                    ongoing support.
+
+                                </p>
+                                <p className='mt-1 text-green-600 font-semibold'> Don't let your mobile app idea stay
+                                    just an idea. Contact us today to discuss your project and explore how we can help
+                                    you build a successful mobile application.</p>
+
+                                {/*<img*/}
+                                {/*    alt=""*/}
+                                {/*    src="https://decode.agency/wp-content/uploads/2022/12/Custom-software-development-process-infographic.png"*/}
+                                {/*    className="mt-4 mb-5 h-100 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"*/}
+                                {/*/>*/}
+                            </div>
+                        </div>
+                    </Modal>
                     <motion.blockquote
                         ref={ref3}
                         animate={controls3}
@@ -197,11 +256,11 @@ const AdditionalServices = () => {
                             />
 
                             <div className="p-4">
-                                <a href="#">
-                                    <h3 className="text-lg font-medium text-gray-900">
-                                        Mobile Application Development
-                                    </h3>
-                                </a>
+
+                                <h3 className="text-lg font-medium text-gray-900">
+                                    Mobile Application Development
+                                </h3>
+
 
                                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                                     Mobile applications are software applications that are designed to run on
@@ -210,8 +269,8 @@ const AdditionalServices = () => {
                                     convenient way to interact
                                     with your business.
                                 </p>
-                                <a
-                                    href="#"
+                                <button
+                                    onClick={() => setMob(true)}
                                     className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-600"
                                 >
                                     Get Started
@@ -221,10 +280,49 @@ const AdditionalServices = () => {
                                     >
                       &rarr;
                     </span>
-                                </a>
+                                </button>
                             </div>
                         </article>
                     </motion.blockquote>
+
+                    <Modal open={dataAnalysis} onClose={() => setDataAnalysis(false)} center>
+                        <div className='p-2 pt-5'>
+                            <img
+                                alt=""
+                                src="https://cdn.sanity.io/images/v6oximkk/production/6ecb1237e1333ec11bbefa21d1f70c47c4ade8e9-1600x1105.jpg?w=1600&h=1105&auto=format"
+                                className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                            />
+                            <h2 className='text-xl font-bold text-blue-950'>Unleash the Power of Your Data</h2>
+                            <div className='text-black mt-5'>
+                                <p className=''>
+                                    Drowning in data but thirsty for insights? Our data analysis services can help you
+                                    unlock the hidden potential within your information. We are a team of data experts
+                                    skilled in extracting, transforming, and analyzing complex datasets to generate
+                                    actionable intelligence.
+
+                                    Whether you have mountains of customer data, website analytics, or internal metrics,
+                                    we can help you identify trends, uncover patterns, and gain a deeper understanding
+                                    of your business. We leverage a variety of tools and techniques, including:
+                                    <br/>
+                                    1. Data cleaning and preparation
+                                    <br/>
+                                    2. Statistical analysis and modeling
+                                    <br/>
+                                    3. Data visualization dashboards
+                                    <br/>
+                                    4. Machine learning and predictive analytics
+                                </p>
+                                <p className='mt-1 text-green-600 font-semibold'> Our goal is to transform your raw data
+                                    into clear, concise, and actionable insights that can inform strategic
+                                    decision-making, improve operational efficiency, and drive business growth.</p>
+                                {/*<img*/}
+                                {/*    alt=""*/}
+                                {/*    src="https://decode.agency/wp-content/uploads/2022/12/Custom-software-development-process-infographic.png"*/}
+                                {/*    className="mt-4 mb-5 h-100 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"*/}
+                                {/*/>*/}
+                            </div>
+                        </div>
+                    </Modal>
                     <motion.blockquote
                         ref={ref4}
                         animate={controls4}
@@ -241,11 +339,11 @@ const AdditionalServices = () => {
                             />
 
                             <div className="p-4">
-                                <a href="#">
-                                    <h3 className="text-lg font-medium text-gray-900">
-                                        Data Analysis Services
-                                    </h3>
-                                </a>
+
+                                <h3 className="text-lg font-medium text-gray-900">
+                                    Data Analysis Services
+                                </h3>
+
 
                                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                                     Data analysis services allow businesses to get their data collected, processed
@@ -253,7 +351,7 @@ const AdditionalServices = () => {
                                     investments in the development and administration of an analytics solution.
                                 </p>
                                 <button
-
+                                    onClick={() => setDataAnalysis(true)}
                                     className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-600"
                                 >
                                     Learn More
@@ -267,6 +365,47 @@ const AdditionalServices = () => {
                             </div>
                         </article>
                     </motion.blockquote>
+                    <Modal open={itCon} onClose={() => setItCon(false)} center>
+                        <div className='p-2 pt-5'>
+                            <img
+                                alt=""
+                                src="https://treku23.com/wp-content/uploads/2021/02/1.jpg"
+                                className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                            />
+                            <h2 className='text-xl font-bold text-blue-950'>Bridge the Gap Between Business and
+                                Technology</h2>
+                            <div className='text-black mt-5'>
+                                <p className=''>
+                                    Technology is constantly evolving, but is it propelling your business forward? Our
+                                    IT consulting services can help you bridge the gap between your business goals and
+                                    the power of technology. We offer a comprehensive suite of services designed to:
+                                    <ol>
+                                        <li><span className='font-semibold'>Align IT Strategy:</span> We work
+                                            collaboratively with you to understand your unique business objectives and
+                                            develop a customized IT strategy that maximizes your return on investment
+                                            (ROI).
+                                        </li>
+                                        <li><span
+                                            className='font-semibold'>Optimize Technology Infrastructure:</span> Our IT
+                                            specialists will assess your existing infrastructure and recommend solutions
+                                            to improve efficiency, security, and scalability.
+                                        </li>
+                                        <li> <span className='font-semibold'>Unlock Innovation:
+</span> We stay at the forefront of emerging technologies and can help you identify and implement innovative solutions
+                                            that give you a competitive edge.
+                                        </li>
+                                    </ol>
+                                </p>
+                                <p className='mt-1 text-green-600 font-semibold'> With a team of experienced and certified consultants, we provide a vendor-agnostic approach, ensuring the best solutions for your specific needs.  Let us help you navigate the ever-changing IT landscape and unlock the full potential of technology for your business success.</p>
+
+                                {/*<img*/}
+                                {/*    alt=""*/}
+                                {/*    src="https://decode.agency/wp-content/uploads/2022/12/Custom-software-development-process-infographic.png"*/}
+                                {/*    className="mt-4 mb-5 h-100 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"*/}
+                                {/*/>*/}
+                            </div>
+                        </div>
+                    </Modal>
                     <motion.blockquote
                         ref={ref5}
                         animate={controls5}
@@ -283,11 +422,11 @@ const AdditionalServices = () => {
                             />
 
                             <div className="p-4">
-                                <a href="#">
-                                    <h3 className="text-lg font-medium text-gray-900">
-                                        IT Consultant
-                                    </h3>
-                                </a>
+
+                                <h3 className="text-lg font-medium text-gray-900">
+                                    IT Consultant
+                                </h3>
+
 
                                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                                     IT consultants provide businesses with expert guidance to leverage technology
@@ -298,7 +437,7 @@ const AdditionalServices = () => {
                                     technology curve.
                                 </p>
                                 <button
-
+                                    onClick={() => setItCon(true)}
                                     className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-600"
                                 >
                                     Learn More
