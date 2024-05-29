@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {Link} from "react-scroll";
 
@@ -7,14 +6,7 @@ const Hero = () => {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 },
   };
-  const fadeBottom = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, scale: 0.9 },
-  };
-  const fadeRight = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0 },
-  };
+
 
   return (
       <div name='home'>

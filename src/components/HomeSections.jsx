@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {FiBox} from "react-icons/fi";
+import CTEDGE from '../assets/cutting-edge.jpg'
 import {useAnimation, motion} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 import Third from "./Third";
@@ -139,7 +139,7 @@ const HomeSections = () => {
                     variants={fadeRight}
                     transition={{duration: 0.5}}
                     alt=""
-                    src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={CTEDGE}
                     className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
                 />
             </section>

@@ -62,16 +62,19 @@ const Fourth = () => {
 
             <section className="bg-white">
                 <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-                    <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                        Our Mission and Visions
+                    <h2 className="text-center text-4xl font-bold tracking-tight text-blue-950 sm:text-3xl mt-4">
+                        Our <span className='text-orange-600'>Mission</span> and <span
+                        className='text-orange-600'>Visions</span>
                     </h2>
 
                     <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
                         <Modal open={missionOpen} onClose={() => setMissionOpen(false)} center>
 
-                            <h2 className="flex justify-center items-center mb-2 text-7xl text-blue-950">
+                        <h2 className="flex justify-center items-center mb-2 text-7xl text-blue-950">
                                 <TfiTarget/></h2>
-                            <h2 className='text-2xl font-bold text-rose-600'>Our Mission</h2>
+                            <h2 className="text-center text-4xl font-bold tracking-tight text-blue-950 sm:text-3xl mt-4">
+                                Our <span className='text-orange-600'>Mission</span>
+                            </h2>
 
                             <div className=' mt-5 text-blue-950 font-semibold'>
                                 <p>Our mission is to be trusted partner in navigating the ever-evolving IT landscape. We
@@ -116,10 +119,13 @@ const Fourth = () => {
                             <h2 className="flex justify-center items-center mb-2 text-7xl text-blue-950">
                                 <PiBinoculars/>
                             </h2>
-                            <h2 className='text-2xl font-bold text-rose-600'>Our Vision</h2>
+                            <h2 className="text-center text-4xl font-bold tracking-tight text-blue-950 sm:text-3xl mt-4">
+                                Our <span className='text-orange-600'>Vision</span>
+                            </h2>
 
                             <div className=' mt-5 text-blue-950 font-semibold'>
-                                <p>Our vision is to empower individuals and businesses through innovative software solutions that simplify
+                                <p>Our vision is to empower individuals and businesses through innovative software
+                                    solutions that simplify
                                     complexity, drive efficiency, and inspire growth. We strive to be at the forefront of technological
                                     advancements, continuously exploring new possibilities and pushing boundaries to shape the future of
                                     software development.
@@ -163,7 +169,9 @@ const Fourth = () => {
                         <Modal open={valuesOpen} onClose={() => setValuesOpen(false)} center>
                             <h2 className="flex justify-center items-center mb-2 text-7xl text-blue-950">
                                 <BsSymmetryVertical /></h2>
-                            <h2 className='text-2xl font-bold text-rose-600'>Our Values</h2>
+                            <h2 className="text-center text-4xl font-bold tracking-tight text-blue-950 sm:text-3xl mt-4">
+                                Our <span className='text-orange-600'>Values</span>
+                            </h2>
 
                             <div className=' mt-5 text-blue-950 font-semibold'>
                                 <p>To be open, honest and fair.. whatever we do, we do it right, we do it together.</p>

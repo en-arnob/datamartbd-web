@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {FaArrowDown} from "react-icons/fa6";
@@ -28,8 +28,8 @@ const Turn = () => {
                   variants={fadeBottom}
                   transition={{duration: 0.5}}
                   alt=""
-                  src="https://images.unsplash.com/photo-1532619187608-e5375cab36aa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  className="absolute inset-0 h-full w-full object-cover"
+                  src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg"
+                  className="absolute inset-0 h-full w-full"
               />
             </div>
 
@@ -48,15 +48,15 @@ const Turn = () => {
                 </ul>
               </div>
 
-              <button
+              {/*<button*/}
 
-                  className="mt-8 inline-block rounded bg-gray-600 px-12 py-3 text-sm font-medium text-white transition  "
-              >
-                <span className='flex gap-1'>
-                  Contact <FaArrowDown className='text-md mt-1' />
-                </span>
+              {/*    className="mt-8 inline-block rounded bg-gray-600 px-12 py-3 text-sm font-medium text-white transition  "*/}
+              {/*>*/}
+              {/*  <span className='flex gap-1'>*/}
+              {/*    Contact <FaArrowDown className='text-md mt-1' />*/}
+              {/*  </span>*/}
 
-              </button>
+              {/*</button>*/}
             </div>
 
           </div>

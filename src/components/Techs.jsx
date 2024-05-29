@@ -39,7 +39,7 @@ const Techs = () => {
                 className='flex flex-col  items-center justify-center w-full bg-white'
             >
                 <h2 className="text-center text-4xl font-bold tracking-tight text-blue-950 sm:text-3xl mt-4">
-                    Technology <span className='text-orange-600'>We</span> Use
+                    <span className='text-orange-600'>Technology</span> We Use
                 </h2>
                 <div
                     className='grid grid-cols-3 md:grid-cols-6 items-center justify-center  w-[50] my-4 flex-wrap p-10  md:gap-3 md:p-12'>

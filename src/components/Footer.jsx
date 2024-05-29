@@ -9,31 +9,32 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-gray-100">
-        <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl px-4 py-5 sm:px-6 lg:px-8">
           <div className="flex justify-center text-teal-600">
             <h1 className="text-xl font-bold text-blue-950">DataMart<span className='text-orange-600'>BD Limited</span></h1>
           </div>
-            <div className='mt-10'>
+            <div className='mt-1'>
                 <div className="flex mt-1 gap-1 justify-center text-teal-600">
                     <span className='mt-1 text-red-600'><FiMapPin/></span>
                     <h1 className="text-sm text-center text-blue-950">House 13, Road-2, Block–A, Banasree, Dhaka</h1>
                 </div>
                 <div className="mt-1 gap-2 flex justify-center text-teal-600">
                     <span className='mt-1 text-blue-600'><AiFillMail/></span>
-                    <h1 className="text-sm text-center text-blue-950">info.datamartbd@gmail.com</h1>
+                    <a href='mailto:info.datamartbd@gmail.com' className="text-sm text-center text-blue-950">info.datamartbd@gmail.com</a> <span
+                    className='mt-1 text-indigo-700'><FaPhoneVolume/></span>
+                    <h1 className="text-sm text-center text-blue-950"> <span><a href='tel:+8801911-612696'>+8801911-612696</a></span> <a href="tel:+8801740-831036">+8801740-831036</a></h1>
                 </div>
-                <div className="mt-1 flex gap-1 justify-center text-teal-600">
-                    <span className='mt-1 text-green-800'><FaGlobe/></span>
-                    <h1 className="text-sm text-center text-blue-950">www.datamartbd.com</h1>
-                </div>
-                <div className="mt-1 gap-1 flex justify-center text-teal-600">
-                    <span className='mt-1 text-indigo-700'><FaPhoneVolume/></span>
-                    <h1 className="text-sm text-center text-blue-950">+8801911-612696 +8801740-831036</h1>
+                {/*<div className="mt-1 flex gap-1 justify-center text-teal-600">*/}
+                {/*    <span className='mt-1 text-green-800'><FaGlobe/></span>*/}
+                {/*    <h1 className="text-sm text-center text-blue-950">www.datamartbd.com</h1>*/}
+                {/*</div>*/}
+                <div className="mt-1 gap-1 flex justify-center text-sm text-slate-800">
+                    © 2024, DataMartBD Limited
                 </div>
             </div>
 
 
-            <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+            <ul className="mt-3 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                 <li>
               <span
                   className="text-gray-700 transition hover:text-gray-700/75">
