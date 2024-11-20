@@ -4,6 +4,12 @@ import {useInView} from "react-intersection-observer";
 
 import {Modal} from "react-responsive-modal";
 
+import CSD from "../assets/CustomSD.png"
+import WD from "../assets/WebD.png"
+import MAD from "../assets/MAD.png"
+import DAS from "../assets/DAS.jpg"
+import ITC from "../assets/ITC.png"
+
 const squareVariants = {
     visible: {opacity: 1, scale: 1, transition: {duration: 0.5}}, hidden: {opacity: 0, scale: 0},
 };
@@ -68,7 +74,7 @@ const AdditionalServices = () => {
                         <div className='p-2'>
                             <img
                                 alt=""
-                                src="https://blog.appsumo.com/wp-content/uploads/2020/09/AS-BLOG-small-business-management-software-1536x614px.jpg"
+                                src={CSD}
                                 className="mt-10 mb-5 h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
                             <h2 className='text-xl font-bold text-blue-950'>Custom Software Development</h2>
@@ -84,7 +90,7 @@ const AdditionalServices = () => {
 
                                 <img
                                     alt=""
-                                    src="https://decode.agency/wp-content/uploads/2022/12/Custom-software-development-process-infographic.png"
+                                    src={WD}
                                     className="mt-4 mb-5 h-100 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                                 />
                             </div>
@@ -101,7 +107,7 @@ const AdditionalServices = () => {
                         <article className="group">
                             <img
                                 alt=""
-                                src="https://blog.appsumo.com/wp-content/uploads/2020/09/AS-BLOG-small-business-management-software-1536x614px.jpg"
+                                src={CSD}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
                             <div className="p-4">
@@ -138,7 +144,7 @@ const AdditionalServices = () => {
                         <div className='p-2 pt-5'>
                             <img
                                 alt=""
-                                src="https://os-system.com/blog/wp-content/uploads/2021/09/Full-Stack-Development-1-1024x576.jpg"
+                                src={WD}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
                             <h2 className='text-xl font-bold text-blue-950'>Web Application Development</h2>
@@ -173,7 +179,7 @@ const AdditionalServices = () => {
                         <article className="group">
                             <img
                                 alt=""
-                                src="https://os-system.com/blog/wp-content/uploads/2021/09/Full-Stack-Development-1-1024x576.jpg"
+                                src={WD}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
 
@@ -211,7 +217,7 @@ const AdditionalServices = () => {
                         <div className='p-2 pt-5'>
                             <img
                                 alt=""
-                                src="https://www.eurotechconseil.com/en/wp-content/uploads/2023/07/header-img-mobil.webp"
+                                src={MAD}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
                             <h2 className='text-xl font-bold text-blue-950'>Bring Your Mobile App Idea to Life</h2>
@@ -251,7 +257,7 @@ const AdditionalServices = () => {
                         <article className="group">
                             <img
                                 alt=""
-                                src="https://www.addevice.io/storage/ckeditor/uploads/images/64477f9642c9d_best.cross.platform.app.development.frameworks.jpg"
+                                src={MAD}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
 
@@ -289,7 +295,7 @@ const AdditionalServices = () => {
                         <div className='p-2 pt-5'>
                             <img
                                 alt=""
-                                src="https://cdn.sanity.io/images/v6oximkk/production/6ecb1237e1333ec11bbefa21d1f70c47c4ade8e9-1600x1105.jpg?w=1600&h=1105&auto=format"
+                                src={DAS}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
                             <h2 className='text-xl font-bold text-blue-950'>Unleash the Power of Your Data</h2>
@@ -334,7 +340,7 @@ const AdditionalServices = () => {
                         <article className="group">
                             <img
                                 alt=""
-                                src="https://cdn.sanity.io/images/v6oximkk/production/6ecb1237e1333ec11bbefa21d1f70c47c4ade8e9-1600x1105.jpg?w=1600&h=1105&auto=format"
+                                src={DAS}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
 
@@ -369,7 +375,7 @@ const AdditionalServices = () => {
                         <div className='p-2 pt-5'>
                             <img
                                 alt=""
-                                src="https://treku23.com/wp-content/uploads/2021/02/1.jpg"
+                                src={ITC}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
                             <h2 className='text-xl font-bold text-blue-950'>Bridge the Gap Between Business and
@@ -417,7 +423,7 @@ const AdditionalServices = () => {
                         <article className="group">
                             <img
                                 alt=""
-                                src="https://treku23.com/wp-content/uploads/2021/02/1.jpg"
+                                src={ITC}
                                 className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                             />
 
